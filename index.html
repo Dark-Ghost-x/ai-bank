@@ -1,0 +1,1051 @@
+<!doctype html>
+<html lang=fa dir=rtl>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>بانک جامع هوش مصنوعی | TheRealPourya</title>
+<meta name=description content="دایرکتوری کامل ابزارهای هوش مصنوعی، چت‌بات‌ها، تولید تصویر، ویدیو و صدا. دسترسی به لینک‌های اصلی بدون واسطه.">
+<meta name=keywords content="هوش مصنوعی, AI, ChatGPT, دانلود AI, ابزار هوش مصنوعی, جمنای, کوپایلت">
+<meta name=author content=TheRealPourya>
+<link href=https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/misc/Farsi-Digits/font-face.css rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css>
+<style>
+:root {
+  --bg-color: #0a0a1a;
+  --sidebar-bg: #11112e;
+  --card-bg: #151530;
+  --primary: #9d4edd;
+  --secondary: #7b2cbf;
+  --neon-purple: #c77dff;
+  --neon-blue: #00d9ff;
+  --text-main: #f0e6ff;
+  --text-muted: #b8b0d0;
+  --border: #2a2a5a;
+  --hover-glow: 0 0 20px rgba(157, 78, 221, 0.5),
+                0 0 40px rgba(157, 78, 221, 0.3),
+                0 0 60px rgba(157, 78, 221, 0.1);
+  --neon-text-glow: 0 0 10px rgba(157, 78, 221, 0.8),
+                    0 0 20px rgba(157, 78, 221, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Vazirmatn, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(157, 78, 221, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(123, 44, 191, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 50% 50%, rgba(0, 217, 255, 0.05) 0%, transparent 30%);
+}
+
+.neon-border {
+  position: relative;
+  border: 1px solid transparent;
+  background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+              linear-gradient(45deg, var(--neon-purple), var(--neon-blue)) border-box;
+  border-radius: 12px;
+}
+
+.neon-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--neon-purple), var(--neon-blue));
+  border-radius: 14px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.neon-border:hover::before {
+  opacity: 1;
+}
+
+.neon-text {
+  text-shadow: var(--neon-text-glow);
+}
+
+.neon-button {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.5);
+}
+
+.neon-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(157, 78, 221, 0.8);
+}
+
+.neon-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.neon-button:hover::before {
+  left: 100%;
+}
+
+.cyber-button {
+  background: linear-gradient(90deg, #ff0080, #7b2cbf);
+  color: white;
+  border: 2px solid #ff0080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
+}
+
+.cyber-button:hover {
+  background: linear-gradient(90deg, #7b2cbf, #ff0080);
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.8);
+  transform: translateY(-2px);
+}
+
+.cyber-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.cyber-button:hover::after {
+  left: 100%;
+}
+
+header {
+  background: rgba(17, 17, 46, 0.95);
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  background: linear-gradient(to right, var(--neon-blue), var(--neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-shadow: var(--neon-text-glow);
+}
+
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 12px 45px 12px 20px;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  background: var(--card-bg);
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.search-container input:focus {
+  border-color: var(--neon-purple);
+  outline: 0;
+  box-shadow: var(--hover-glow);
+}
+
+.search-container i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.social-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+  max-width: 1600px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+aside {
+  background: var(--sidebar-bg);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  height: calc(100vh - 140px);
+  position: sticky;
+  top: 120px;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(157, 78, 221, 0.2);
+}
+
+aside::-webkit-scrollbar {
+  width: 5px;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+aside h3 {
+  color: var(--text-main);
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border);
+  font-size: 1.1rem;
+  position: relative;
+}
+
+aside h3::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary));
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+aside li a:hover {
+  background: rgba(157, 78, 221, 0.1);
+  color: var(--neon-purple);
+  transform: translateX(-5px);
+}
+
+aside li a i {
+  width: 20px;
+  text-align: center;
+}
+
+main section {
+  margin-bottom: 50px;
+  scroll-margin-top: 140px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border);
+  color: var(--primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--neon-purple), var(--neon-blue));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--hover-glow);
+}
+
+.card-header {
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  color: var(--text-main);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.card-btn {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  background: linear-gradient(90deg, var(--secondary), var(--primary));
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-btn:hover {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.5);
+}
+
+footer {
+  background: #000;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--neon-purple), var(--neon-blue), var(--neon-purple));
+  animation: neon-flow 3s linear infinite;
+}
+
+@keyframes neon-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+footer p {
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer i {
+  margin-left: 5px;
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  aside {
+    display: none;
+  }
+  
+  header h1 {
+    font-size: 1.4rem;
+  }
+  
+  .social-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cyber-button {
+    width: 200px;
+    justify-content: center;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+<h1><i class="fa-solid fa-brain"></i> بانک ابزارهای هوش مصنوعی</h1>
+<div class=search-container>
+<i class="fa-solid fa-search"></i>
+<input id=searchInput placeholder="جستجو (مثلاً: Gemini، ChatGPT، برنامه نویسی، رایگان...)">
+</div>
+<div class="social-buttons">
+<a href="https://t.me/Red_Rooted_ghost" target="_blank" class="cyber-button">
+<i class="fab fa-telegram"></i> Telegram Red
+</a>
+<a href="https://github.com/Dark-Ghost-x" target="_blank" class="cyber-button">
+<i class="fab fa-github"></i> GitHub Red
+</a>
+<a href="https://github.com/xPOURY4/AI-Links" target="_blank" class="cyber-button">
+<i class="fab fa-github"></i> GitHub AI Tools
+</a>
+<a href="https://x.com/TheRealPourya" target="_blank" class="cyber-button">
+<i class="fab fa-x-twitter"></i> X Twitter
+</a>
+</div>
+</header>
+<div class=wrapper>
+<aside>
+<h3><i class="fa-solid fa-bars"></i> دسته‌بندی‌ها</h3>
+<ul id=nav-list></ul>
+</aside>
+<main id=main-content>
+</main>
+</div>
+<footer>
+<p>گردآورده شده توسط <span style=color:#fff>TheRealPourya</span></p>
+<p>
+<a href=https://x.com/TheRealPourya target=_blank>
+<i class="fa-brands fa-x-twitter"></i> x.com/TheRealPourya
+</a>
+</p>
+</footer>
+<script>
+const data = [
+    {
+        id: "official",
+        title: "سایت‌های رسمی مدل‌ها",
+        icon: "fa-robot",
+        items: [
+            {n: "AI Studio", u: "https://aistudio.google.com/app/prompts/new_chat", d: "Gemini 3.0 Pro Preview / نامحدود / نیاز به ثبت‌نام"},
+            {n: "Microsoft Copilot", u: "https://copilot.microsoft.com", d: "GPT-5 (Chat) / نامحدود / استدلال"},
+            {n: "Kimi", u: "https://www.kimi.com/", d: "Kimi K2 مدل استدلال / نیاز به ثبت‌نام"},
+            {n: "Qwen", u: "https://chat.qwen.ai/", d: "Qwen3-Max / نامحدود"},
+            {n: "Grok", u: "https://grok.com/", d: "Grok 4 + Grok 3 Fast (۹۶ روزانه) / Grok 4.1 (۲۴ روزانه)"},
+            {n: "Z.ai", u: "https://chat.z.ai/", d: "GLM 4.6 Chatbot / نامحدود"},
+            {n: "DeepSeek", u: "https://chat.deepseek.com/", d: "DeepSeek-V3.2-Exp / نامحدود"},
+            {n: "Claude", u: "https://claude.ai/", d: "Claude 4.5 Sonnet / ثبت‌نام با شماره تلفن"},
+            {n: "Gemini", u: "https://gemini.google.com/", d: "Gemini 3.0 Preview (۵ روزانه) / 2.5 Flash (نامحدود)"},
+            {n: "ChatGPT", u: "https://chatgpt.com/", d: "GPT-5.1 / دارای محدودیت استفاده"},
+            {n: "Ernie", u: "https://ernie.baidu.com/", d: "ERNIE X1.1"},
+            {n: "Mistral", u: "https://chat.mistral.ai", d: "Mistral Medium / حریم خصوصی"},
+            {n: "LongCat", u: "https://longcat.chat/", d: "LongCat-Flash-Chat / نامحدود"},
+            {n: "MiniMax AI", u: "https://agent.minimax.io/", d: "MiniMax-M2"},
+            {n: "Cohere", u: "https://dashboard.cohere.com/playground/chat", d: "Command-A-Reasoning / ۱۰۰۰ ماهانه / نیاز به ثبت‌نام"},
+            {n: "Solar", u: "https://console.upstage.ai/playground/chat", d: "Solar Pro 2 Model / بدون ثبت‌نام"},
+            {n: "StepFun", u: "https://stepfun.ai/", d: "Step 3 / DeepSeek R1 / نیاز به ثبت‌نام"},
+            {n: "dots-demo", u: "https://huggingface.co/spaces/rednote-hilab/dots-demo", d: "Dots Chatbot / بدون ثبت‌نام"},
+            {n: "Apertus", u: "https://publicai.co/chat", d: "Apertus 70B"},
+            {n: "Reka", u: "https://www.reka.ai/", d: "Reka Flash 3.1"},
+            {n: "K2Think", u: "https://www.k2think.ai/", d: "LLM360 / MBZUAI / نیاز به ثبت‌نام"},
+            {n: "Ai2 Playground", u: "https://playground.allenai.org/", d: "Olmo3 32B Chatbot / بدون ثبت‌نام"}
+        ]
+    },
+    {
+        id: "multi",
+        title: "سایت‌های چند مدلی",
+        icon: "fa-layer-group",
+        items: [
+            {n: "Free LLM API Resources", u: "https://github.com/cheahjs/free-llm-api-resources", d: "منابع چت‌بات / میرورها"},
+            {n: "LMArena", u: "https://lmarena.ai/?mode=direct", d: "چت‌بات‌های متعدد / بدون ثبت‌نام / ریست با ایمیل موقت"},
+            {n: "Yupp.ai", u: "https://yupp.ai/", d: "Gemini 3.0 Preview / GPT-5.1 / Grok 4.1 / ورود با گوگل"},
+            {n: "ISH", u: "https://ish.chat/", d: "GPT-5 / Grok 4.1 / Kimi K2 / بدون ثبت‌نام"},
+            {n: "HiveChat", u: "https://oi.wr.do/", d: "Kimi K2 / DeepSeek R1 / نیاز به ثبت‌نام"},
+            {n: "Together.ai", u: "https://chat.together.ai/", d: "DeepSeek V3.1 / Qwen 3 / تا ۱۱۰ روزانه"},
+            {n: "Groq", u: "https://groq.com/", d: "سرعت بالا / Kimi K2 / GPT-OSS / نیاز به ثبت‌نام"},
+            {n: "AI Assistant", u: "https://aiassistantbot.pages.dev/", d: "Deepseek-R1 / Qwen QwQ-32B / بدون ثبت‌نام"},
+            {n: "DuckDuckGo AI", u: "https://duck.ai/", d: "GPT-5 mini / حریم خصوصی / بدون ثبت‌نام"},
+            {n: "Scira", u: "https://scira.ai/", d: "Grok 4 / Qwen 3 / موتور جستجوی AI / بدون ثبت‌نام"},
+            {n: "NVIDIA NIM", u: "https://build.nvidia.com/", d: "DeepSeek V3.1 / Kimi K2 / بدون ثبت‌نام"},
+            {n: "FreePass", u: "https://freepass.ai/", d: "Gemini 2.5 Pro / GPT-5-chat / بدون ثبت‌نام"},
+            {n: "Genspark", u: "https://www.genspark.ai/", d: "GPT-5-high / Gemini 3.0 / نیاز به ثبت‌نام"}
+        ]
+    },
+    {
+        id: "specialized",
+        title: "چت‌بات‌های تخصصی (تحقیق و جستجو)",
+        icon: "fa-microscope",
+        items: [
+            {n: "Awesome AI Web Search", u: "https://github.com/felladrin/awesome-ai-web-search", d: "ایندکس موتورهای جستجوی AI"},
+            {n: "LMArena Search", u: "https://lmarena.ai/?mode=direct&chat-modality=search", d: "موتور جستجوی AI / بدون ثبت‌نام"},
+            {n: "Perplexity", u: "https://www.perplexity.ai/", d: "موتور جستجوی دقیق"},
+            {n: "NotebookLM", u: "https://notebooklm.google/", d: "چت با اسناد / یادداشت برداری / محصول گوگل"},
+            {n: "Google AI Mode", u: "https://google.com/aimode", d: "موتور جستجوی AI"},
+            {n: "Perplexica", u: "https://github.com/ItzCrazyKns/Perplexica", d: "موتور جستجوی متن‌باز / سلف‌هاست"},
+            {n: "Learn About", u: "https://learning.google.com/experiments/learn-about", d: "هوش مصنوعی آموزشی گوگل"},
+            {n: "SciSpace", u: "https://scispace.com/", d: "چت‌بات تحقیقاتی"},
+            {n: "Bohrium", u: "https://www.bohrium.com/", d: "چت‌بات تحقیقاتی"},
+            {n: "Scinito", u: "https://ekb.scinito.ai/ai/chat", d: "چت‌بات تحقیقاتی"},
+            {n: "Elicit", u: "https://elicit.com/", d: "چت‌بات تحقیقاتی"},
+            {n: "PrivateGPT", u: "https://privategpt.dev/", d: "چت با اسناد / یادداشت برداری"},
+            {n: "Onyx", u: "https://www.onyx.app/", d: "چت با اسناد / یادداشت برداری"},
+            {n: "DocsGPT", u: "https://www.docsgpt.cloud/", d: "چت با اسناد / یادداشت برداری"},
+            {n: "Hyperspace", u: "https://hyper.space/", d: "شبکه AI همتا به همتا (P2P)"}
+        ]
+    },
+    {
+        id: "local",
+        title: "رابط‌های کاربری لوکال (Local UI)",
+        icon: "fa-desktop",
+        items: [
+            {n: "SillyTavern", u: "https://docs.sillytavern.app/", d: "رابط کاربری سلف‌هاست پیشرفته"},
+            {n: "Open WebUI", u: "https://openwebui.com/", d: "رابط کاربری سلف‌هاست"},
+            {n: "GPT4Free", u: "https://github.com/xtekky/gpt4free", d: "اپلیکیشن دسکتاپ"},
+            {n: "Msty", u: "https://msty.app/", d: "دانلود و اجرای مدل‌ها به صورت لوکال"},
+            {n: "Cherry Studio", u: "https://github.com/CherryHQ/cherry-studio", d: "اپلیکیشن دسکتاپ"},
+            {n: "LobeChat", u: "https://lobechat.com/chat", d: "اپلیکیشن دسکتاپ"},
+            {n: "Noi", u: "https://noib.app/", d: "اپلیکیشن دسکتاپ"},
+            {n: "Chatbot UI", u: "https://chatbotui.com", d: "اپلیکیشن دسکتاپ"},
+            {n: "tgpt", u: "https://github.com/aandrew-me/tgpt", d: "سلف‌هاست"},
+            {n: "ch.at", u: "https://github.com/Deep-ai-inc/ch.at", d: "سلف‌هاست / سبک و مینیمال"}
+        ]
+    },
+    {
+        id: "hosting",
+        title: "ابزارهای میزبانی شخصی (Self-Hosting)",
+        icon: "fa-server",
+        items: [
+            {n: "Jan", u: "https://jan.ai/", d: "اجرای آفلاین مدل‌ها"},
+            {n: "LM Studio", u: "https://lmstudio.ai/", d: "اجرای آفلاین مدل‌ها"},
+            {n: "llama.cpp", u: "https://github.com/ggerganov/llama.cpp", d: "اجرای مدل‌های ترنسفورمر"},
+            {n: "KoboldCpp", u: "https://github.com/LostRuins/koboldcpp", d: "llama.cpp همراه با API و GUI"},
+            {n: "oobabooga", u: "https://github.com/oobabooga/text-generation-webui", d: "وب یوآی تولید متن"},
+            {n: "Aphrodite Engine", u: "https://aphrodite.pygmalion.chat/", d: "سرویس‌دهی LLM در مقیاس بالا"},
+            {n: "Petals", u: "https://petals.dev/", d: "سلف‌هاست"},
+            {n: "Leon", u: "https://getleon.ai/", d: "سلف‌هاست"},
+            {n: "Ollama", u: "https://ollama.com/", d: "اجرای آسان مدل‌ها در ترمینال"},
+            {n: "ChatRTX", u: "https://www.nvidia.com/en-us/ai-on-rtx/chatrtx/", d: "مخصوص کارت‌های RTX انویدیا"},
+            {n: "LoLLMs Web UI", u: "https://github.com/ParisNeo/lollms-webui", d: "سلف‌هاست"},
+            {n: "AnythingLLM", u: "https://anythingllm.com/", d: "سلف‌هاست"},
+            {n: "LibreChat", u: "https://librechat.ai/", d: "سلف‌هاست"},
+            {n: "GPT4All", u: "https://www.nomic.ai/gpt4all", d: "سلف‌هاست"},
+            {n: "llamafile", u: "https://github.com/Mozilla-Ocho/llamafile", d: "اجرای LLM با یک فایل"}
+        ]
+    },
+    {
+        id: "roleplay",
+        title: "چت‌بات‌های ایفای نقش (Roleplay)",
+        icon: "fa-masks-theater",
+        items: [
+            {n: "Sukino-Findings", u: "https://rentry.org/Sukino-Findings", d: "منابع رول‌پلی AI"},
+            {n: "PygmalionAI", u: "https://pygmalion.chat/", d: "مدل‌های سلف‌هاست رول‌پلی"},
+            {n: "FlowGPT", u: "https://flowgpt.com", d: "چت‌بات‌های رول‌پلی"},
+            {n: "Chub", u: "https://chub.ai/", d: "کارت‌های شخصیت (Character Cards)"},
+            {n: "KoboldAI", u: "https://koboldai.com/", d: "رابط کاربری رول‌پلی / بدون ثبت‌نام"},
+            {n: "Perchance", u: "https://perchance.org/ai-character-chat", d: "رول‌پلی / بدون ثبت‌نام / نامحدود / پشتیبانی تصویر"},
+            {n: "4thWall AI", u: "https://beta.4wall.ai/", d: "چت‌بات‌های رول‌پلی"},
+            {n: "WyvernChat", u: "https://app.wyvern.chat/", d: "چت‌بات‌های رول‌پلی"},
+            {n: "FictionLab", u: "https://fictionlab.ai/", d: "رول‌پلی / داستان‌نویسی"},
+            {n: "TavernAI", u: "https://tavernai.net/", d: "رول‌پلی / داستان‌نویسی"},
+            {n: "KoboldAI Lite", u: "https://lite.koboldai.net/", d: "رول‌پلی / بدون ثبت‌نام / نامحدود"},
+            {n: "AI Dungeon", u: "https://aidungeon.com/", d: "بازی نقش‌آفرینی متنی / بدون ثبت‌نام"},
+            {n: "Spellbound", u: "https://www.tryspellbound.com/", d: "رول‌پلی / داستان‌نویسی"},
+            {n: "Kajiwoto", u: "https://kajiwoto.ai/", d: "ساخت چت‌بات"},
+            {n: "Uncanny Valley", u: "https://www.sesame.com/research/crossing_the_uncanny_valley_of_voice#demo", d: "چت صوتی واقع‌گرایانه"},
+            {n: "HammerAI", u: "https://www.hammerai.com/desktop", d: "چت‌بات رول‌پلی سلف‌هاست"}
+        ]
+    },
+    {
+        id: "coding",
+        title: "هوش مصنوعی برنامه‌نویسی",
+        icon: "fa-code",
+        items: [
+            {n: "Awesome AI Agents", u: "https://github.com/e2b-dev/awesome-ai-agents", d: "منابع هوش مصنوعی کدنویسی"},
+            {n: "Windsurf", u: "https://www.windsurf.com/", d: "ادیتور کد هوشمند"},
+            {n: "Pieces", u: "https://pieces.app/", d: "ذخیره اسنیپت کد / GPT-4 رایگان"},
+            {n: "Qwen Code", u: "https://github.com/QwenLM/qwen-code", d: "CLI کدنویسی"},
+            {n: "Gemini CLI", u: "https://google-gemini.github.io/gemini-cli/", d: "کدنویسی با جمنای"},
+            {n: "GitHub Copilot", u: "https://github.com/features/copilot", d: "دستیار کدنویسی گیت‌هاب"},
+            {n: "Sourcery", u: "https://sourcery.ai/", d: "بررسی خودکار کد"},
+            {n: "Devv", u: "https://devv.ai/", d: "موتور جستجوی کدنویسی"},
+            {n: "Llama Coder", u: "https://llamacoder.together.ai/", d: "تولید کد / بدون ثبت‌نام"},
+            {n: "Roo Code", u: "https://roocode.com/", d: "کدنویسی AI"},
+            {n: "Code Web Chat", u: "https://codeweb.chat/", d: "کدنویسی AI / بدون ثبت‌نام"},
+            {n: "imgcook", u: "https://imgcook.com", d: "کدنویسی AI / بدون ثبت‌نام"},
+            {n: "Supermaven", u: "https://supermaven.com/", d: "کدنویسی AI / بدون ثبت‌نام"},
+            {n: "OpenHands", u: "https://www.all-hands.dev/", d: "کدنویسی AI"},
+            {n: "Continue", u: "https://continue.dev/", d: "کدنویسی AI"},
+            {n: "Cursor", u: "https://rentry.co/FMHYB64#cursor", d: "ادیتور کد پیشرفته"},
+            {n: "GitWit", u: "https://gitwit.dev/", d: "کدنویسی AI"},
+            {n: "AnyCoder", u: "https://huggingface.co/spaces/akhaliq/anycoder", d: "کدنویسی AI"},
+            {n: "AI SDK", u: "https://sdk.vercel.ai/", d: "کدنویسی AI"},
+            {n: "Qodo", u: "https://www.qodo.ai/", d: "کدنویسی AI"},
+            {n: "Blackbox", u: "https://www.blackbox.ai/", d: "کدنویسی AI"},
+            {n: "Seron", u: "https://www.seron.dev/", d: "کدنویسی AI"},
+            {n: "Denigma", u: "https://denigma.app/", d: "کدنویسی AI / بدون ثبت‌نام"},
+            {n: "Aider", u: "https://aider.chat/", d: "کدنویسی در ترمینال"},
+            {n: "Codacy", u: "https://www.codacy.com/", d: "اصلاح کد AI"},
+            {n: "Open Interpreter", u: "https://github.com/OpenInterpreter/open-interpreter", d: "اجرای کد لوکال / بدون ثبت‌نام"},
+            {n: "Orchids", u: "https://orchids.app/", d: "تبدیل متن به کد سایت"},
+            {n: "v0", u: "https://v0.app/", d: "تبدیل متن به کد سایت"},
+            {n: "DeepSite", u: "https://huggingface.co/spaces/enzostvs/deepsite", d: "تبدیل متن به کد سایت"},
+            {n: "Bolt.new", u: "https://bolt.new/", d: "ساخت وب اپلیکیشن"},
+            {n: "Fragments", u: "https://fragments.e2b.dev/", d: "ساخت اپلیکیشن"},
+            {n: "Rork", u: "https://rork.com/", d: "ساخت اپلیکیشن"},
+            {n: "Code2prompt", u: "https://github.com/mufeedvh/code2prompt", d: "تبدیل کدبیس به پرامپت"}
+        ]
+    },
+    {
+        id: "tools",
+        title: "ابزارهای هوش مصنوعی",
+        icon: "fa-screwdriver-wrench",
+        items: [
+            {n: "Awesome ChatGPT", u: "https://github.com/sindresorhus/awesome-chatgpt", d: "منابع هوش مصنوعی"},
+            {n: "Every ChatGPT GUI", u: "https://github.com/billmei/every-chatgpt-gui", d: "ایندکس رابط‌های کاربری"},
+            {n: "tldraw computer", u: "https://computer.tldraw.com/", d: "تولید و تغییر داده با ورک‌فلو"},
+            {n: "Page Assist", u: "https://github.com/n4ze3m/page-assist", d: "افزونه مرورگر"},
+            {n: "LLM CLI", u: "https://llm.datasette.io/", d: "ابزار خط فرمان LLM"},
+            {n: "ChatPDF", u: "https://www.chatpdf.com/", d: "چت با کتاب و PDF / بدون ثبت‌نام"},
+            {n: "ChatGPT DeMod", u: "https://github.com/4as/ChatGPT-DeMod", d: "حذف سانسور ChatGPT"},
+            {n: "Concierge", u: "https://askconcierge.ai/", d: "اتصال اپ‌ها به AI"},
+            {n: "MassiveMark", u: "https://www.bibcit.com/en/massivemark", d: "تبدیل چت به DOCX"},
+            {n: "ChatGPT Widescreen", u: "https://chatgptevo.com/widescreen/", d: "حالت تمام صفحه"},
+            {n: "Voice Control", u: "https://voicecontrol.chat/", d: "کنترل صوتی ChatGPT"},
+            {n: "screenpipe", u: "https://screenpi.pe/", d: "ضبط صفحه نمایش AI / بدون ثبت‌نام"},
+            {n: "ChatGPT Exporter", u: "https://greasyfork.org/en/scripts/456055", d: "خروجی گرفتن از چت‌ها"},
+            {n: "GPThemes", u: "https://github.com/itsmartashub/GPThemes", d: "تم‌های ChatGPT"},
+            {n: "LLM VRAM Calculator", u: "https://huggingface.co/spaces/NyxKrage/LLM-Model-VRAM-Calculator", d: "محاسبه سخت‌افزار مورد نیاز"},
+            {n: "AI Piracy Resources", u: "https://rentry.org/aipiracyresources", d: "منابع آزاد AI"}
+        ]
+    },
+    {
+        id: "prompts",
+        title: "پرامپت‌ها و جیل‌برک‌ها",
+        icon: "fa-terminal",
+        items: [
+            {n: "L1B3RT4S", u: "https://github.com/elder-plinius/L1B3RT4S", d: "پرامپت‌های جیل‌برک"},
+            {n: "BlackFriday GPTs", u: "https://github.com/friuns2/BlackFriday-GPTs-Prompts", d: "دایرکتوری پرامپت"},
+            {n: "Leaked Prompts", u: "https://github.com/linexjlin/GPTs", d: "دایرکتوری پرامپت"},
+            {n: "Prompt Engineering Guide", u: "https://www.promptingguide.ai", d: "راهنمای مهندسی پرامپت"},
+            {n: "ChatGPT System Prompt", u: "https://github.com/LouisShark/chatgpt_system_prompt", d: "دایرکتوری پرامپت"},
+            {n: "The Big Prompt Library", u: "https://github.com/0xeb/TheBigPromptLibrary", d: "دایرکتوری پرامپت"},
+            {n: "Jailbreak Listings", u: "https://rentry.org/jb-listing", d: "لیست جیل‌برک‌ها"},
+            {n: "promptfoo", u: "https://www.promptfoo.dev/", d: "تست پرامپت"},
+            {n: "Tensor Trust", u: "https://tensortrust.ai/", d: "بازی مهارت پرامپت"},
+            {n: "RedTeam Arena", u: "https://redarena.ai/", d: "بازی جیل‌برک AI"},
+            {n: "Gobble Bot", u: "https://gobble.bot/", d: "تولید فایل متنی برای چت‌بات"}
+        ]
+    },
+    {
+        id: "indexes",
+        title: "ایندکس‌ها و دایرکتوری‌ها",
+        icon: "fa-list-ul",
+        items: [
+            {n: "LLM Explorer", u: "https://llm-explorer.com/", d: "دیتابیس LLM"},
+            {n: "FutureTools", u: "https://www.futuretools.io/?pricing-model=free", d: "دایرکتوری AI"},
+            {n: "Google Labs", u: "https://labs.google/", d: "آزمایش‌های گوگل"},
+            {n: "Perchance Generators", u: "https://perchance.org/generators", d: "سازنده AI ساده"},
+            {n: "YP for AI", u: "https://www.ypforai.com", d: "دایرکتوری AI"},
+            {n: "LLM Resources Hub", u: "https://llmresourceshub.vercel.app/", d: "دایرکتوری AI"},
+            {n: "Awesome AI Tools", u: "https://github.com/mahseema/awesome-ai-tools", d: "دایرکتوری AI"},
+            {n: "It's Better With AI", u: "https://itsbetterwithai.com/", d: "دایرکتوری AI"},
+            {n: "GPT Demo", u: "https://www.gptdemo.net/gpt/search?lg=en&cate=&keywords=&tags=free,&sort=popular", d: "دایرکتوری AI"},
+            {n: "ArtificialStudio", u: "https://app.artificialstudio.ai/tools", d: "ابزارهای چندگانه مرورگر"},
+            {n: "LLM Pricing", u: "https://docs.google.com/spreadsheets/d/18GHPEBJzDbICmMStPVkNWA_hQHiWmLcqUdEJA1b4MJM/", d: "لیست قیمت مدل‌ها"}
+        ]
+    },
+    {
+        id: "benchmarks",
+        title: "بنچمارک‌ها و لیدربردها",
+        icon: "fa-chart-simple",
+        items: [
+            {n: "Artificial Analysis", u: "https://artificialanalysis.ai/", d: "بنچمارک چت‌بات، تصویر و ویدیو"},
+            {n: "LMArena", u: "https://lmarena.ai/leaderboard", d: "لیدربرد چت‌بات‌ها"},
+            {n: "SEAL LLM", u: "https://scale.com/leaderboard", d: "لیدربرد چت‌بات‌ها"},
+            {n: "RankedAGI", u: "https://rankedagi.com/", d: "لیدربرد چت‌بات‌ها"},
+            {n: "Kaggle Benchmarks", u: "https://www.kaggle.com/benchmarks", d: "لیدربرد چت‌بات‌ها"},
+            {n: "Wolfram Benchmarking", u: "https://www.wolfram.com/llm-benchmarking-project/", d: "لیدربرد چت‌بات‌ها"},
+            {n: "Yupp Leaderboard", u: "https://yupp.ai/leaderboard", d: "لیدربرد چت‌بات‌ها"},
+            {n: "LLM Stats", u: "https://llm-stats.com/", d: "لیدربرد چت‌بات‌ها"},
+            {n: "OpenLM Arena", u: "https://openlm.ai/chatbot-arena/", d: "لیدربرد چت‌بات‌ها"},
+            {n: "OpenRouter", u: "https://openrouter.ai/rankings", d: "رتبه‌بندی محبوبیت"},
+            {n: "Open VLM", u: "https://huggingface.co/spaces/opencompass/open_vlm_leaderboard", d: "بنچمارک VLM"},
+            {n: "EQ-Bench", u: "https://eqbench.com/", d: "بنچمارک هوش هیجانی AI"},
+            {n: "MathArena", u: "https://matharena.ai/", d: "رقابت ریاضی AI"},
+            {n: "Simple Bench", u: "https://simple-bench.com/", d: "بنچمارک استدلال انسانی"},
+            {n: "AI Elo", u: "https://aielo.co/", d: "رقابت بازی AI"},
+            {n: "Alpha Arena", u: "https://nof1.ai/", d: "بنچمارک قابلیت سرمایه‌گذاری"}
+        ]
+    },
+    {
+        id: "code-bench",
+        title: "بنچمارک‌های برنامه‌نویسی",
+        icon: "fa-laptop-code",
+        items: [
+            {n: "LiveSWEBench", u: "https://liveswebench.ai/", d: "لیدربرد مهندسی نرم‌افزار"},
+            {n: "AIBenchmarks", u: "https://aibenchmarks.net/", d: "لیدربرد کدنویسی"},
+            {n: "WebDev Arena", u: "https://web.lmarena.ai/", d: "لیدربرد کدنویسی"},
+            {n: "LiveCodeBench", u: "https://livecodebench.github.io/leaderboard.html", d: "لیدربرد کدنویسی"},
+            {n: "Aider LLM", u: "https://aider.chat/docs/leaderboards/", d: "لیدربرد کدنویسی"},
+            {n: "SWEBench", u: "https://www.swebench.com/", d: "لیدربرد مهندسی نرم‌افزار"},
+            {n: "multi-swe-bench", u: "https://multi-swe-bench.github.io/", d: "لیدربرد مهندسی نرم‌افزار"}
+        ]
+    },
+    {
+        id: "writing",
+        title: "ابزارهای نوشتاری هوش مصنوعی",
+        icon: "fa-pen-nib",
+        items: [
+            {n: "TextFX", u: "https://textfx.withgoogle.com/", d: "ابزار نویسندگی خلاق"},
+            {n: "Rytr", u: "https://rytr.me/", d: "نویسندگی AI"},
+            {n: "Scrip AI", u: "https://scripai.com/", d: "ابزار متنی آنلاین / بدون ثبت‌نام"},
+            {n: "INK", u: "https://app.inkforall.com/tools", d: "ابزار متنی آنلاین"},
+            {n: "QuickPen AI", u: "https://quickpenai.com/", d: "ابزار متنی آنلاین"},
+            {n: "Dreamily", u: "https://dreamily.ai/", d: "داستان نویسی AI"},
+            {n: "PerchanceStory", u: "https://perchancestory.com/", d: "داستان نویسی AI"},
+            {n: "Quarkle", u: "https://quarkle.ai/", d: "دستیار نویسندگی"}
+        ]
+    },
+    {
+        id: "video",
+        title: "تولید ویدیو (Video Generation)",
+        icon: "fa-video",
+        items: [
+            {n: "VBench", u: "https://huggingface.co/spaces/Vchitect/VBench_Leaderboard", d: "لیدربرد مدل‌های ویدیو"},
+            {n: "Grok Imagine", u: "https://grok.com/imagine", d: "۱۰۰ روزانه / Imagine 0.9"},
+            {n: "Sora", u: "https://openai.com/index/sora/", d: "۲۹ روزانه"},
+            {n: "Bing Create", u: "https://www.bing.com/images/create", d: "Sora 1 / بدون ورودی تصویر"},
+            {n: "Qwen", u: "https://chat.qwen.ai/", d: "۱۰ روزانه"},
+            {n: "PigenAI", u: "https://pigenai.art/", d: "۱۰ در ساعت"},
+            {n: "Whisk", u: "https://labs.google/fx/en/tools/whisk", d: "Veo 3 / ۱۰ ماهانه"},
+            {n: "Vheer", u: "https://vheer.com/", d: "نامحدود / بدون ثبت‌نام"},
+            {n: "Dreamina", u: "https://dreamina.capcut.com/ai-tool/home", d: "۲ روزانه"},
+            {n: "Opal Veo 3", u: "https://opal.withgoogle.com/?flow=drive:/16qMbrhlc7gjTfI1zpnKbyoBxEcDRi4om&shared&mode=app", d: "Veo 3"},
+            {n: "PixVerse", u: "https://pixverse.ai/", d: "۳ روزانه"},
+            {n: "Genmo", u: "https://www.genmo.ai/", d: "۳۰ ماهانه"},
+            {n: "Vivago", u: "https://vivago.ai/", d: "۱ روزانه"},
+            {n: "Wan AI", u: "https://wan.video/", d: "۱۰ روزانه / تبدیل عکس به فیلم"},
+            {n: "FramePack", u: "https://github.com/colinurbs/FramePack-Studio", d: "اپ دسکتاپ / مدل لوکال"},
+            {n: "Eggnog", u: "https://www.eggnog.ai/", d: "ریمیکس ویدیو کاراکتر"}
+        ]
+    },
+    {
+        id: "image",
+        title: "تولید تصویر (Image Generation)",
+        icon: "fa-image",
+        items: [
+            {n: "LMArena Text to Image", u: "https://lmarena.ai/leaderboard/text-to-image", d: "بنچمارک تولید تصویر"},
+            {n: "Gemini", u: "https://gemini.google.com/", d: "Nano Banana (۱۰۰ روزانه) / نیاز به ثبت‌نام"},
+            {n: "AI Studio", u: "https://aistudio.google.com/generate-image", d: "Imagen 4 + Ultra / نیاز به ثبت‌نام"},
+            {n: "Bing Create", u: "https://www.bing.com/images/create", d: "نامحدود / GPT-4o / نیاز به ثبت‌نام"},
+            {n: "LMArena", u: "https://lmarena.ai/?mode=direct&chat-modality=image", d: "چندین تولیدکننده / بدون ثبت‌نام"},
+            {n: "Dreamina", u: "https://dreamina.capcut.com/ai-tool/home", d: "۱۵ پرامپت روزانه / نیاز به ثبت‌نام"},
+            {n: "Hunyuan", u: "https://hunyuan.tencent.com/image/en", d: "Hunyuan Image 3.0 / نامحدود"},
+            {n: "Grok", u: "https://grok.com/", d: "۹۶ روزانه / ویرایش / نیاز به ثبت‌نام"},
+            {n: "Qwen", u: "https://chat.qwen.ai/", d: "۳۰ در ۲۴ ساعت / ویرایش"},
+            {n: "Yupp.ai", u: "https://yupp.ai/", d: "Nano Banana Pro / ورود با گوگل"},
+            {n: "ISH", u: "https://ish.chat/", d: "نامحدود / GPT Image 1 mini / بدون ثبت‌نام"},
+            {n: "Recraft", u: "https://www.recraft.ai/", d: "۳۰ روزانه / نیاز به ثبت‌نام"},
+            {n: "PigenAI", u: "https://pigenai.art/", d: "نامحدود / Imagen 4 / Qwen"},
+            {n: "Image Editor", u: "https://theresanaiforthat.com/@taaft/image-to-image-generator/", d: "نامحدود / ویرایش / Flux Kontext Dev"},
+            {n: "Ernie", u: "https://ernie.baidu.com/", d: "نامحدود / ویرایش / نیاز به ثبت‌نام"},
+            {n: "ZonerAI", u: "https://zonerai.com/", d: "نامحدود / ویرایش"},
+            {n: "Perchance", u: "https://perchance.org/ai-text-to-image-generator", d: "Chroma / نامحدود / بدون ثبت‌نام"},
+            {n: "ImageFX", u: "https://labs.google/fx/tools/image-fx", d: "Imagen 4 / نامحدود"},
+            {n: "Mage", u: "https://www.mage.space/", d: "Flux Schnell"},
+            {n: "Vheer", u: "https://vheer.com/", d: "Flux Kontext / نامحدود / بدون ثبت‌نام"},
+            {n: "AIGazou", u: "https://muryou-aigazou.com/", d: "Flux / Stable Diffusion / نامحدود / بدون ثبت‌نام"},
+            {n: "Reve Image", u: "https://app.reve.com", d: "۲۰ روزانه / ویرایش"},
+            {n: "Coze", u: "https://space.coze.cn/", d: "Seadream 4.0 / ۵۰ روزانه"},
+            {n: "AI Gallery", u: "https://aigallery.app/", d: "نامحدود / Stable Diffusion / بدون ثبت‌نام"},
+            {n: "imgsys", u: "https://imgsys.org/", d: "مقایسه تولیدکننده‌ها / نامحدود"},
+            {n: "Diffusers Outpaint", u: "https://huggingface.co/spaces/fffiloni/diffusers-image-outpaint", d: "توسعه دهنده تصویر"},
+            {n: "Genie", u: "https://lumalabs.ai/genie", d: "تولید تصویر ۳ بعدی"},
+            {n: "Interactive Scenes", u: "https://lumalabs.ai/interactive-scenes", d: "تولید صحنه تعاملی"},
+            {n: "Illusion Diffusion", u: "https://huggingface.co/spaces/AP123/IllusionDiffusion", d: "تولید هنر توهمی"}
+        ]
+    },
+    {
+        id: "local-img",
+        title: "فرانت‌اند لوکال تصویر",
+        icon: "fa-photo-film",
+        items: [
+            {n: "Stability Matrix", u: "https://lykos.ai/", d: "سلف‌هاست"},
+            {n: "Invoke", u: "https://invoke-ai.github.io/InvokeAI/", d: "سلف‌هاست"},
+            {n: "ComfyUI", u: "https://www.comfy.org/", d: "سلف‌هاست"},
+            {n: "Fooocus", u: "https://github.com/lllyasviel/Fooocus", d: "سلف‌هاست"},
+            {n: "Mochi Diffusion", u: "https://github.com/MochiDiffusion/MochiDiffusion", d: "استیبل دیفیوژن برای مک"},
+            {n: "DiffusionBee", u: "https://diffusionbee.com/", d: "استیبل دیفیوژن برای مک"},
+            {n: "Automatic1111", u: "https://github.com/AUTOMATIC1111/stable-diffusion-webui", d: "سلف‌هاست"},
+            {n: "StableStudio", u: "https://github.com/Stability-AI/StableStudio", d: "سلف‌هاست"},
+            {n: "Easy Diffusion", u: "https://easydiffusion.github.io/", d: "سلف‌هاست"},
+            {n: "Makeayo", u: "https://makeayo.com", d: "سلف‌هاست"},
+            {n: "biniou", u: "https://github.com/Woolverine94/biniou", d: "سلف‌هاست"},
+            {n: "Sygil WebUI", u: "https://sygil-dev.github.io/sygil-webui/", d: "سلف‌هاست"},
+            {n: "Radiata", u: "https://ddpn08.github.io/Radiata/en/", d: "سلف‌هاست"},
+            {n: "SD WebUI Forge", u: "https://github.com/lllyasviel/stable-diffusion-webui-forge", d: "سلف‌هاست"},
+            {n: "ComfyUI-Zluda", u: "https://github.com/patientx/ComfyUI-Zluda", d: "سلف‌هاست"},
+            {n: "Amuse", u: "https://www.amuse-ai.com/", d: "استیبل دیفیوژن برای AMD"}
+        ]
+    },
+    {
+        id: "img-guides",
+        title: "راهنما و ابزار تصویر",
+        icon: "fa-book-open",
+        items: [
+            {n: "Paper2GUI", u: "https://github.com/Baiyuetribe/paper2gui/blob/main/README_en.md", d: "منابع تصویر AI"},
+            {n: "Civitai", u: "https://civitai.com/", d: "ایندکس مدل‌های SD"},
+            {n: "Prompy", u: "https://www.prompy.me/", d: "ایندکس پرامپت"},
+            {n: "Traveler's Guide", u: "https://sweet-hall-e72.notion.site/A-Traveler-s-Guide-to-the-Latent-Space-85efba7e5e6a40e5bd3cae980f30235f", d: "راهنمای هنر AI"},
+            {n: "ImagePromptGuru", u: "https://imagepromptguru.net/", d: "تشخیص پرامپت عکس"},
+            {n: "SD Dynamic Prompts", u: "https://github.com/adieyal/sd-dynamic-prompts", d: "افزونه Automatic1111"},
+            {n: "AI Horde", u: "https://stablehorde.net/", d: "شبکه توزیع شده GPU"},
+            {n: "IOPaint", u: "https://www.iopaint.com/", d: "حذف آیتم از تصویر"},
+            {n: "Unstable Diffusion", u: "https://discord.com/invite/unstablediffusion", d: "کامیونیتی تصویر AI"},
+            {n: "Generative AI Guide", u: "https://microsoft.github.io/generative-ai-for-beginners/", d: "راهنمای AI مولد"}
+        ]
+    },
+    {
+        id: "audio",
+        title: "تولید صدا و موسیقی",
+        icon: "fa-music",
+        items: [
+            {n: "Suno", u: "https://suno.com/", d: "۱۰ روزانه"},
+            {n: "MusicFX", u: "https://labs.google/fx/tools/music-fx", d: "بر اساس منطقه"},
+            {n: "WolframTones", u: "https://tones.wolfram.com/", d: "بدون ثبت‌نام"},
+            {n: "Stable Audio", u: "https://www.stableaudio.com/", d: "۱۰ ماهانه"},
+            {n: "Fake Music Generator", u: "https://www.fakemusicgenerator.com/", d: "بدون ثبت‌نام"},
+            {n: "MusicGen", u: "https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md", d: "بدون ثبت‌نام"},
+            {n: "Sonauto", u: "https://sonauto.ai/", d: "نامحدود"},
+            {n: "Waveformer", u: "https://waveformer.replicate.dev/", d: "گیت‌هاب"},
+            {n: "SOUNDRAW", u: "https://soundraw.io/", d: "بدون ثبت‌نام"},
+            {n: "Mubert", u: "https://mubert.com/", d: "ساخت موزیک"},
+            {n: "AIVA", u: "https://aiva.ai/", d: "ساخت موزیک"},
+            {n: "Boomy", u: "https://boomy.com/", d: "ساخت موزیک"},
+            {n: "Melobytes", u: "https://melobytes.com/en", d: "ساخت موزیک"},
+            {n: "MusicGPT", u: "https://musicgpt.com/", d: "ساخت موزیک"},
+            {n: "AI Jukebox", u: "https://huggingface.co/spaces/enzostvs/ai-jukebox", d: "بدون ثبت‌نام"},
+            {n: "Eapy", u: "https://home.eapy.io/", d: "تولید سمپل MIDI"},
+            {n: "Pack Generator", u: "https://output.com/products/pack-generator", d: "تولید سمپل پک"},
+            {n: "MMAudio", u: "https://hkchengrex.com/MMAudio/", d: "تولید صدا برای ویدیو صامت"},
+            {n: "WOMBO", u: "https://www.wombo.ai/", d: "لب‌خوانی با AI"}
+        ]
+    },
+    {
+        id: "tts",
+        title: "تبدیل متن به گفتار (TTS)",
+        icon: "fa-comment-dots",
+        items: [
+            {n: "TTS Online", u: "https://www.text-to-speech.online/", d: "بدون ثبت‌نام"},
+            {n: "Uberduck", u: "https://uberduck.ai/", d: "TTS"},
+            {n: "Google Illuminate", u: "https://illuminate.google.com/", d: "تولید مکالمه AI"},
+            {n: "ElevenLabs", u: "https://elevenlabs.io/", d: "بدون ثبت‌نام"},
+            {n: "Google Speech Gen", u: "https://aistudio.google.com/generate-speech", d: "گوگل AI"},
+            {n: "FakeYou", u: "https://fakeyou.com/", d: "بدون ثبت‌نام"},
+            {n: "Tortoise TTS", u: "https://github.com/neonbjb/tortoise-tts", d: "بدون ثبت‌نام"},
+            {n: "Bark", u: "https://github.com/suno-ai/bark", d: "بدون ثبت‌نام"},
+            {n: "TTSOpenAI", u: "https://ttsopenai.com/", d: "بدون ثبت‌نام / ربات OpenAI"},
+            {n: "GPT-SoVITS", u: "https://github.com/RVC-Boss/GPT-SoVITS", d: "بدون ثبت‌نام"},
+            {n: "Kyutai TTS", u: "https://kyutai.org/next/tts", d: "بدون ثبت‌نام"},
+            {n: "LazyPy", u: "https://lazypy.ro/tts/", d: "بدون ثبت‌نام"},
+            {n: "Kokoro TTS", u: "https://huggingface.co/spaces/hexgrad/Kokoro-TTS", d: "بدون ثبت‌نام"},
+            {n: "Ondoku", u: "https://ondoku3.com/en/", d: "بدون ثبت‌نام"},
+            {n: "Speechma", u: "https://speechma.com/", d: "بدون ثبت‌نام"},
+            {n: "Kokoro-82M", u: "https://huggingface.co/hexgrad/Kokoro-82M", d: "بدون ثبت‌نام"},
+            {n: "Chatterbox", u: "https://huggingface.co/spaces/ResembleAI/Chatterbox", d: "بدون ثبت‌نام"},
+            {n: "AnyVoiceLab", u: "https://anyvoicelab.com/long-form-text-to-speech-converter/", d: "بدون ثبت‌نام"},
+            {n: "VoiceCraft", u: "https://github.com/jasonppy/VoiceCraft", d: "ابزار صدا"},
+            {n: "EmotiVoice", u: "https://github.com/netease-youdao/EmotiVoice", d: "ابزار صدا"},
+            {n: "Cartesia", u: "https://play.cartesia.ai/", d: "ابزار صدا"},
+            {n: "Fish Audio", u: "https://fish.audio/", d: "ابزار صدا"},
+            {n: "Audio-WebUI", u: "https://github.com/gitmylo/audio-webui", d: "بدون ثبت‌نام"},
+            {n: "VanillaVoice", u: "https://www.vanillavoice.com/", d: "بدون ثبت‌نام"},
+            {n: "LOVO", u: "https://lovo.ai/", d: "ابزار صدا"},
+            {n: "SoundofText", u: "https://soundoftext.com/", d: "بدون ثبت‌نام"},
+            {n: "FreeTTS", u: "https://freetts.com/", d: "TTS"},
+            {n: "Hume", u: "https://www.hume.ai/", d: "بدون ثبت‌نام"},
+            {n: "NaturalReaders", u: "https://www.naturalreaders.com/online/", d: "بدون ثبت‌نام"},
+            {n: "AIVocal", u: "https://aivocal.io/", d: "نیاز به اکانت گوگل"},
+            {n: "Moe TTS", u: "https://huggingface.co/spaces/skytnt/moe-tts", d: "بدون ثبت‌نام"}
+        ]
+    },
+    {
+        id: "voice-clone",
+        title: "تغییر و کلون صدا",
+        icon: "fa-microphone-lines",
+        items: [
+            {n: "Applio", u: "https://applio.org/", d: "کلون صدا / بدون ثبت‌نام"},
+            {n: "RVC V2", u: "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/docs/en/README.en.md", d: "کلون صدا RVC V2 (لوکال)"},
+            {n: "Voice Changer", u: "https://github.com/w-okada/voice-changer/blob/master/docs_i18n/README_en.md", d: "تغییر صدا در لحظه"},
+            {n: "Replay", u: "https://www.weights.com/replay", d: "اپ دسکتاپ RVC"},
+            {n: "Weights", u: "https://www.weights.com/", d: "مدل‌های صوتی AI"},
+            {n: "AnyVoiceLab", u: "https://anyvoicelab.com/voice-cloning/", d: "کلون صدا / بدون ثبت‌نام"},
+            {n: "AllVoiceLab", u: "https://www.allvoicelab.com/", d: "کلون صدا"},
+            {n: "Zyphra", u: "https://playground.zyphra.com/audio", d: "کلون صدا"}
+        ]
+    },
+    {
+        id: "separation",
+        title: "حذف و جداسازی صدا",
+        icon: "fa-sliders",
+        items: [
+            {n: "MultiSong Leaderboard", u: "https://mvsep.com/quality_checker/multisong_leaderboard", d: "لیدربرد جداسازی"},
+            {n: "UVR5 UI", u: "https://huggingface.co/spaces/Eddycrack864/UVR5-UI", d: "ابزار جداسازی"},
+            {n: "MVSEP", u: "https://mvsep.com/", d: "ابزار جداسازی"},
+            {n: "Splitter", u: "https://www.bandlab.com/splitter", d: "نیاز به ثبت‌نام"},
+            {n: "MDX23", u: "https://github.com/jarredou/MVSEP-MDX23-Colab_v2", d: "گوگل کولب"},
+            {n: "Music-Source-Separation", u: "https://github.com/jarredou/Music-Source-Separation-Training-Colab-Inference", d: "گوگل کولب"},
+            {n: "VocalRemover", u: "https://vocalremover.org/", d: "ابزار جداسازی"},
+            {n: "Audacity Effects", u: "https://www.audacityteam.org/download/openvino/", d: "پلاگین آداسیتی"},
+            {n: "Ultimate Vocal Remover", u: "https://colab.research.google.com/github/NaJeongMo/Colaboratory-Notebook-for-Ultimate-Vocal-Remover/blob/main/Vocal%20Remover%205_arch.ipynb", d: "گوگل کولب"},
+            {n: "Remove Vocals", u: "https://www.remove-vocals.com/", d: "ابزار جداسازی"},
+            {n: "vocali", u: "https://vocali.se/en", d: "ابزار جداسازی"},
+            {n: "mazmazika", u: "https://www.mazmazika.com/", d: "ابزار جداسازی"},
+            {n: "ezstems", u: "https://ezstems.com/", d: "ابزار جداسازی"}
+        ]
+    }
+];
+
+function renderContent() {
+    const navList = document.getElementById("nav-list");
+    const mainContent = document.getElementById("main-content");
+    
+    data.forEach(section => {
+        const navItem = document.createElement("li");
+        navItem.innerHTML = `<a href="#${section.id}"><i class="fa-solid ${section.icon}"></i> ${section.title}</a>`;
+        navList.appendChild(navItem);
+        
+        const sectionEl = document.createElement("section");
+        sectionEl.id = section.id;
+        
+        const sectionHeader = document.createElement("div");
+        sectionHeader.className = "section-header";
+        sectionHeader.innerHTML = `<i class="fa-solid ${section.icon}" style="font-size: 1.5rem;"></i> <h2>${section.title}</h2>`;
+        
+        const grid = document.createElement("div");
+        grid.className = "grid";
+        
+        section.items.forEach(item => {
+            const card = document.createElement("div");
+            card.className = "card neon-border";
+            card.innerHTML = `
+                <div class="card-header">
+                    <h4>${item.n}</h4>
+                    <p>${item.d}</p>
+                </div>
+                <a href="${item.u}" target="_blank" class="card-btn neon-button">مشاهده سایت <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            `;
+            grid.appendChild(card);
+        });
+        
+        sectionEl.appendChild(sectionHeader);
+        sectionEl.appendChild(grid);
+        mainContent.appendChild(sectionEl);
+    });
+}
+
+document.getElementById("searchInput").addEventListener("keyup", function(event) {
+    const searchTerm = event.target.value.toLowerCase().trim();
+    
+    if (searchTerm === "") {
+        document.querySelectorAll(".card").forEach(card => {
+            card.style.display = "flex";
+        });
+        return;
+    }
+    
+    document.querySelectorAll(".card").forEach(card => {
+        const title = card.querySelector("h4").innerText.toLowerCase();
+        const description = card.querySelector("p").innerText.toLowerCase();
+        
+        const searchTerms = searchTerm.split(" ");
+        let matches = false;
+        
+        searchTerms.forEach(term => {
+            if (title.includes(term) || description.includes(term)) {
+                matches = true;
+            }
+        });
+        
+        if (matches) {
+            card.style.display = "flex";
+            card.classList.add("neon-border");
+        } else {
+            card.style.display = "none";
+        }
+    });
+});
+
+renderContent();
+</script>
+</body>
+  </html>
